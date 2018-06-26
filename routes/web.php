@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TreeController@index');
+
+Route::resource('trees', 'TreeController')
+    ->except('index');
