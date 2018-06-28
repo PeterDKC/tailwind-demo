@@ -34,7 +34,7 @@ The purpose of the demo is to outline basic installation and usage of TailwindCS
 <a id="local-installation"></a>
 ## Local installation
 
-    git clone git@github.com:PeterDKC/tailwind-demo.git
+    git clone https://github.com/PeterDKC/tailwind-demo.git
     cd tailwind-demo
     composer install
     npm install
@@ -160,7 +160,7 @@ Find the `colors` > `brand` section ( at the bottom of the color declarations ).
 
 ```
     get ["brand-darkest"]() {
-    return this["orange-darkest"];
+        return this["orange-darkest"];
     },
 ```
 
@@ -168,7 +168,7 @@ Find the `colors` > `brand` section ( at the bottom of the color declarations ).
 
 ```
     get ["brand-darkest"]() {
-    return this["green-darkest"];
+        return this["green-darkest"];
     },
 ```
 
