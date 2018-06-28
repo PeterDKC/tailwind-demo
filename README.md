@@ -159,17 +159,17 @@ Find the `colors` > `brand` section ( at the bottom of the color declarations ).
 **Before:**
 
 ```
-  get ["brand-darkest"]() {
+    get ["brand-darkest"]() {
     return this["orange-darkest"];
-  },
+    },
 ```
 
 **After:**
 
 ```
-  get ["brand-darkest"]() {
+    get ["brand-darkest"]() {
     return this["green-darkest"];
-  },
+    },
 ```
 
 <a id="configure-some-basic-tailwind-options---margin--padding"></a>
@@ -182,23 +182,23 @@ The list of basic Padding and Margin options contains a good default set. Howeve
 In `tailwind.js`, find the `padding` section. You'll see that steps 0-4, 6, & 8 come out of the box, stepping up `.25rem` per step. Fill in any additional options. Example:
 
 ```
-  padding: {
-    px: "1px",
-    "0": "0",
-    "1": "0.25rem",
-    "2": "0.5rem",
-    "3": "0.75rem",
-    "4": "1rem",
-    "5": "1.25rem",
-    "6": "1.5rem",
-    "7": "1.75rem",
-    "9": "2.25rem",
-    "10": "2.5rem",
-    "12": "3rem",
-    "16": "4rem",
-    "20": "5rem",
-    "24": "6rem",
-  },
+    padding: {
+        px: "1px",
+        "0": "0",
+        "1": "0.25rem",
+        "2": "0.5rem",
+        "3": "0.75rem",
+        "4": "1rem",
+        "5": "1.25rem",
+        "6": "1.5rem",
+        "7": "1.75rem",
+        "9": "2.25rem",
+        "10": "2.5rem",
+        "12": "3rem",
+        "16": "4rem",
+        "20": "5rem",
+        "24": "6rem",
+    },
 ```
 
 **Margin**
@@ -210,11 +210,11 @@ You'll find an identical set of out-of-the-box options in the `margin` section. 
 
 Don't forget that after any changes to `webpack.mix.js` or `tailwind.js`, you'll need to reubuild your frontend assets with Webpack! Changes to `taildwind.js` should be picked up automatically by `npm run watch`, but for `webpack.mix.js` alterations you probably have to stop the watch script and re-run manually.
 
-  npm run dev
+    npm run dev
 
 or
 
-  npm run watch
+    npm run watch
 
 <a id="done"></a>
 ## Done!
