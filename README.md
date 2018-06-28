@@ -82,7 +82,7 @@ Below are the set of steps to get Tailwind up and running and start applying cla
 ### Get the Tailwind Preset Installed
 
     git checkout -b my-branch-name
-    composer install laravel-frontend-presets/tailwindcss
+    composer require laravel-frontend-presets/tailwindcss
     php artisan preset tailwindcss
     npm install && npm run dev && npm run dev
 
