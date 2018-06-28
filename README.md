@@ -41,11 +41,14 @@ Here's [PDF version](TailwindDemo.pdf) of the presentation deck.
     git clone https://github.com/PeterDKC/tailwind-demo.git
     cd tailwind-demo
     composer install
+    php artisan key:generate
     npm install
 
-set your dev database details in `.env`. The Sprocket package will set up the mysql database and local site user for you.
+Copy `.env.example`. Set your dev database details in `.env`, along with any other relevant details, such as `APP_NAME` and `APP_URL`. Mostly the defaults should be fine.
 
-    php artisan sprocket:make-db
+The Sprocket package will set up the mysql database and local site user for you. You'll need to know the root ( or homestead, etc. ) mysql user credentials for the next step.
+
+    php artisan sprocket:makedb
     php artisan trees:seed
 
 You should now have your databases installed, migrated, and 10 faked Trees in the database.
