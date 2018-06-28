@@ -1,18 +1,17 @@
-<!-- MarkdownTOC autolink="true" style="ordered" autoanchor="true" -->
+<!-- MarkdownTOC autolink="true" brackets="round" autoanchor="true" levels="2,3" -->
 
-1. [Tailwind CSS Demo](#tailwind-css-demo)
-  1. [Author](#author)
-  1. [Local installation](#local-installation)
-  1. [Branches](#branches)
-  1. [Tailwind](#tailwind)
-  1. [DIY](#diy)
-    1. [Get the Tailwind Preset Installed](#get-the-tailwind-preset-installed)
-    1. [Alter Mix Config](#alter-mix-config)
-    1. [MDI Icons](#mdi-icons)
-    1. [Configure some basic Tailwind Options - Color](#configure-some-basic-tailwind-options---color)
-    1. [Configure some basic Tailwind Options - Margin & Padding](#configure-some-basic-tailwind-options---margin--padding)
-  1. [Re-Build Your Assets](#re-build-your-assets)
-  1. [Done!](#done)
+- [Author](#author)
+- [Local installation](#local-installation)
+- [Branches](#branches)
+- [Tailwind](#tailwind)
+- [DIY](#diy)
+  - [Get the Tailwind Preset Installed](#get-the-tailwind-preset-installed)
+  - [Alter Mix Config](#alter-mix-config)
+  - [MDI Icons](#mdi-icons)
+  - [Configure some basic Tailwind Options - Color](#configure-some-basic-tailwind-options---color)
+  - [Configure some basic Tailwind Options - Margin & Padding](#configure-some-basic-tailwind-options---margin--padding)
+- [Re-Build Your Assets](#re-build-your-assets)
+- [Done!](#done)
 
 <!-- /MarkdownTOC -->
 
