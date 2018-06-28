@@ -35,7 +35,7 @@ The purpose of the demo is to outline basic installation and usage of TailwindCS
 ## Local installation
 
     git clone git@github.com:PeterDKC/tailwind-demo.git
-    cd tailwin-demo
+    cd tailwind-demo
     composer install
     npm install
 
