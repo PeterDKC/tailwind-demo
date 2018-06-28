@@ -41,13 +41,13 @@ Here's [PDF version](TailwindDemo.pdf) of the presentation deck.
     git clone https://github.com/PeterDKC/tailwind-demo.git
     cd tailwind-demo
     composer install
-    php artisan key:generate
     npm install
 
 Copy `.env.example`. Set your dev database details in `.env`, along with any other relevant details, such as `APP_NAME` and `APP_URL`. Mostly the defaults should be fine.
 
 The Sprocket package will set up the mysql database and local site user for you. You'll need to know the root ( or homestead, etc. ) mysql user credentials for the next step.
 
+    php artisan key:generate
     php artisan sprocket:makedb
     php artisan trees:seed
 
