@@ -46,10 +46,18 @@ You should see a list of Trees with create, edit, and delete buttons with browse
 
 Below are the set of steps to get Tailwind up and running and start applying classes to the application.
 
+---
+
+**Get the Tailwind Preset Installed**
+
     git checkout -b my-branch-name
     composer install laravel-frontend-presets/tailwindcss
     php artisan preset tailwindcss
     npm install && npm run dev && npm run dev
+
+---
+
+**Alter Mix Config**
 
 Open `webpack.mix.js` and make the following changes to the last few lines of the file:
 
@@ -75,7 +83,9 @@ if (mix.inProduction()) {
    .extract(['vue', 'axios']);
 ```
 
-This instructs Webpack to always version ( cache-bust ) our frontend assets, and to make longer-lived files for seldom-changed libraries ( Vue and Axios ). The `extract()` directive is optional but is a good habit to get into. Note that this requires mixing 3 javascript files into the application instead of just one:
+This instructs Webpack to always version ( cache-bust ) our frontend assets, and to make longer-lived files for seldom-changed libraries ( Vue and Axios ). The `extract()` directive is optional but is a good habit to get into.
+
+**Note** that this requires mixing 3 javascript files into the application instead of just one:
 
 *from `resources/views/layouts/app.blade.php` in this application:*
 
@@ -101,5 +111,40 @@ $icon-font-path: '~mdi/fonts';
 
 This will instruct Webpack to build out the MDI icon files and package them with the application.
 
+---
+
+**Configure some basic Tailwind Options**
+
+Tailwind is fully configurable. Its default set of styles is laid out in a large JavaScript array in `tailwind.js` in your app root.
+
+Find the `colors` section, and then the list of `green` colors. Replace them with the following:
+
+```
+  "green-darkest": "#174F1C",
+  "green-darker": "#227729",
+  "green-dark": "#2E9E37",
+  green: "#39C645",
+  "green-light": "#61D16A",
+  "green-lighter": "#88DD8F",
+  "green-lightest": "#B0E8B5",
+```
+
+Find the `colors` > `brand` section ( at the bottom of the color declarations ). Replace `orange` with `green` in these declarations to match our Tree theme. Example:
+
+**Before:**
+
+```
+  get ["brand-darkest"]() {
+    return this["orange-darkest"];
+  },
+```
+
+**After:**
+
+```
+  get ["brand-darkest"]() {
+    return this["green-darkest"];
+  },
+```
 
 
