@@ -1,0 +1,49 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+    @apply .border .border-grey .bg-grey-lightest;
+    @apply .px-4 .py-2 .mr-4 .no-underline;
+    @apply .text-grey-darkest;
+}
+
+.button:hover, .button.is-active {
+    @apply .text-white .bg-grey-dark .shadow;
+}
+
+.button-green {
+    @apply .button .border-green;
+    @apply .text-green;
+}
+
+.button-green:hover, .button-green.is-active {
+    @apply .text-green-lightest .bg-green-dark .shadow-lg;
+}
+
+.button-blue {
+    @apply .button .border-blue;
+    @apply .text-blue;
+}
+
+.button-blue:hover, .button-blue.is-active {
+    @apply .text-blue-lightest .bg-blue-dark .shadow-lg;
+}
+
+.button-red {
+    @apply .button .border-red;
+    @apply .text-red;
+}
+
+.button-red:hover, .button-red.is-active {
+    @apply .text-red-lightest .bg-red-dark .shadow-lg;
+}
+
+.button-yellow {
+    @apply .button .border-yellow;
+    @apply .text-yellow;
+}
+
+.button-yellow:hover, .button-yellow.is-active {
+    @apply .text-yellow-lightest .bg-yellow-dark .shadow-lg;
+}

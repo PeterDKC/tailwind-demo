@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>Add a Tree</h1>
+    <h1 class="main-header">Add a Tree</h1>
 
     {{ Form::model($tree, ['method' => 'put', 'route' => ['trees.update', 'tree' => $tree]]) }}
 

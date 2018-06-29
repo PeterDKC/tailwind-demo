@@ -2,34 +2,44 @@
 
 @section('content')
 
-    <h1>Trees</h1>
+    <h1 class="main-header">Trees</h1>
 
-    <div>
-        <a href="{{ route('trees.create') }}">
+    <div class="mb-6">
+        <a href="{{ route('trees.create') }}" class="button-green">
             <i class="mdi mdi-library-plus"></i>
             <span>Add a Tree</span>
         </a>
     </div>
 
     @foreach ($trees as $tree)
-        <div>
-            <p>
-                {{ $tree->name }}
-                ({{ $tree->species }})
-            </p>
+        <div class="tree-info">
+            <div class="tree-info-header">
+                <div>Common name <span>{{ $tree->name }}</span></div>
 
-            <div>Genus {{ $tree->genus }}</div>
-            <div>Family {{ $tree->family }}</div>
-            <div>Notes {{ $tree->notes }}</div>
+                <div>Species <span>{{ $tree->species }}</span></div>
 
-            <div>
-                <a href="{{ route('trees.edit', ['tree' => $tree]) }}">
+                <div>Genus <span>{{ $tree->genus }}</span></div>
+
+                <div>Family <span>{{ $tree->family }}</span></div>
+            </div>
+
+
+            <div class="mb-2">
+                <span class="text-blue-light">Notes</span>
+            </div>
+
+            <div class="text-grey-darker">
+                {{ $tree->notes }}
+            </div>
+
+
+            <div class="py-4">
+                <a href="{{ route('trees.edit', ['tree' => $tree]) }}" class="button-blue">
                     <i class="mdi mdi-pencil"></i>
                     <span>Edit</span>
                 </a>
-                ||
-                {{ Form::model($tree, ['method' => 'delete', 'route' => ['trees.destroy', 'tree' => $tree]])}}
-                    <button>
+                {{ Form::model($tree, ['method' => 'delete', 'route' => ['trees.destroy', 'tree' => $tree], 'class' => 'inline'])}}
+                    <button class="button-red">
                         <i class="mdi mdi-delete"></i>
                         <span>Delete</span>
                     </button>

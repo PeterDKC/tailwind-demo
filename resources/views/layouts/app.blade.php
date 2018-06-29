@@ -16,9 +16,14 @@
 <body>
     <div class="flex flex-col" id="app">
 
-        <a href="/">
-            {{ env('APP_NAME') }}
-        </a>
+        <div class="bg-brand-lightest mb-4 py-4">
+            <div class="container mx-auto h-full">
+                <a href="/" class="no-underline text-brand-dark p-2 bg-white hover:bg-brand-dark hover:text-white">
+                    <i class="mdi mdi-tree"></i>
+                    <span>{{ env('APP_NAME') }}</span>
+                </a>
+            </div>
+        </div>
 
         <div class="container mx-auto h-full">
 
