@@ -14,6 +14,7 @@
         - [Configure some basic Tailwind Options - Margin & Padding](#configure-some-basic-tailwind-options---margin--padding)
     - [Re-Build Your Assets](#re-build-your-assets)
     - [Done!](#done)
+    - [Demo Branch](#demo-branch)
 
 <!-- /MarkdownTOC -->
 
@@ -27,6 +28,8 @@ The purpose of the demo is to outline basic installation and usage of TailwindCS
 ## Introduction Deck
 
 Here's [PDF version](TailwindDemo.pdf) of the presentation deck.
+
+Here's the [YouTube Video](https://www.youtube.com/watch?v=w5fbVfLgebU) of the live demo.
 
 ## Author
 
@@ -67,7 +70,7 @@ Once you've following the above steps you can branch off of master with:
 
 See git guides / documentation for futher options from here.
 
-**demo**: This branch contains a completed set of views with Tailwind styles applied to represent a completed site. It may / may not correspond to what was done during the live demo, but instead is a reference for what might come out of the demo.
+**demo**: See [Demo Branch](#demo-branch) below.
 
 ## Tailwind
 
