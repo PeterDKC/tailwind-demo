@@ -67,7 +67,7 @@ Once you've following the above steps you can branch off of master with:
 
 See git guides / documentation for futher options from here.
 
-**demo-complete**: This branch contains a completed set of views with Tailwind styles applied to represent a completed site. It may / may not correspond to what was done during the live demo, but instead is a reference for what might come out of the demo.
+**demo**: This branch contains a completed set of views with Tailwind styles applied to represent a completed site. It may / may not correspond to what was done during the live demo, but instead is a reference for what might come out of the demo.
 
 ## Tailwind
 
@@ -217,3 +217,56 @@ or
 ## Done!
 
 You're ready to start applying styles into the site.
+
+## Demo Branch
+
+Here's an example `app.css` file from the `demo` branch. I haven't completed the form styles, just a basic version of the main page. This all took me roughly 45 minutes.
+
+```
+$icon-font-path: '~mdi/fonts';
+@import '~mdi/css/materialdesignicons.css';
+
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+/* importing another css file with some custom styles for organization */
+@import 'buttons.css';
+
+/* this could easily just be on h1 instead .main-header, it's up to you. */
+.main-header {
+    @apply .text-brand-dark .mb-4 .pl-4;
+}
+
+/* if you want to implement something like a Bulma card component, go for it! */
+.card {
+    @apply .border .p-4 .border-brand-dark;
+    @apply .my-4 .shadow;
+}
+
+/* you can make your own "Tailwindy" utility classes. */
+.bg-bottom-grey {
+    @apply .pb-4 .border-b-2 .border-grey;
+}
+
+/*
+    If you want to extend your generic base component and then make
+    something for specific use cases, it's super easy.
+*/
+.tree-info {
+    @apply .card;
+}
+
+.tree-info-header {
+    @apply .flex .mb-4 .w-full .text-grey-darker .bg-bottom-grey;
+}
+
+.tree-info-header div {
+    @apply .w-1/4;
+    @apply .font-bold .text-blue;
+}
+
+.tree-info-header div span {
+    @apply .font-normal .text-grey-dark .italic;
+}
+```
