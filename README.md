@@ -14,6 +14,7 @@
         - [Configure some basic Tailwind Options - Margin & Padding](#configure-some-basic-tailwind-options---margin--padding)
     - [Re-Build Your Assets](#re-build-your-assets)
     - [Done!](#done)
+    - [Demo Branch](#demo-branch)
 
 <!-- /MarkdownTOC -->
 
@@ -69,7 +70,7 @@ Once you've following the above steps you can branch off of master with:
 
 See git guides / documentation for futher options from here.
 
-**demo**: This branch contains a completed set of views with Tailwind styles applied to represent a completed site. It may / may not correspond to what was done during the live demo, but instead is a reference for what might come out of the demo.
+**demo**: See [Demo Branch](#demo-branch) below.
 
 ## Tailwind
 
