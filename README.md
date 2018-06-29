@@ -28,6 +28,8 @@ The purpose of the demo is to outline basic installation and usage of TailwindCS
 
 Here's [PDF version](TailwindDemo.pdf) of the presentation deck.
 
+Here's the [YouTube Video](https://www.youtube.com/watch?v=w5fbVfLgebU) of the live demo.
+
 ## Author
 
 **Peter DeMarco**
